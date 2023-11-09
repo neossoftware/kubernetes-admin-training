@@ -31,12 +31,17 @@ kubectl drain <node_name> --ignore-daemonsets
 ```
 
 vi pod1.yml
-
 kubectl apply -f pod1.yml
 
+vi deployment-1.yml
+kubectl apply -f deployment-1.yml
 
+kubectl get pods -o wide
 
+GKE drain a node
+kubectl drain gke-cluster-1-default-pool-45929765-4qt0 --ignore-daemonsets --force --delete-emptydir-data
 
+kubectl uncordon gke-cluster-1-default-pool-45929765-4qt0 
 
 GKE sample cluster
 
