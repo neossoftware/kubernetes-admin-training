@@ -1,4 +1,6 @@
 
+minikube start --vm-driver docker 
+
 Get all namespaces
 
 ```
