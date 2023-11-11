@@ -10,5 +10,4 @@ spec:
         image: busybox:stable
         command: ["echo", "This is a test!"]
       restartPolicy: Never
-backoffLimit: 4
-activeDeadlineSeconds: 10
+  backoffLimit: 4
